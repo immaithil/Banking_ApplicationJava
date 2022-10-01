@@ -53,6 +53,7 @@ class BankAccount{
         System.out.println("C. Withdraw");
         System.out.println("D. Previous transaction");
         System.out.println("E. Exit");
+        System.out.println("F. Withdraw 100 Ruppes");
 
         do{
             System.out.println("***********************************************************************************");
@@ -100,6 +101,14 @@ class BankAccount{
                 case 'E':
                     System.out.println("**************************************************************************************");
                     break;
+                    
+                case 'F':
+                    System.out.println("**************************************************************************************");
+                    System.out.println("Rs 100 has been withdrawn from your account");
+                    System.out.println("**************************************************************************************");
+                    withdraw(100);
+                    System.out.println("\n");
+                    break;   
 
                 default:
                     System.out.println("Invalid Option !! Please enter again");
